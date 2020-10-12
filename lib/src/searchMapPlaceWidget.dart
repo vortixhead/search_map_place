@@ -304,7 +304,7 @@ class _SearchMapPlaceWidgetState extends State<SearchMapPlaceWidget>
   /// API request function. Returns the Predictions
   Future<dynamic> _makeRequest(input) async {
     String url =
-        "https://maps.googleapis.com/maps/api/place/autocomplete/json?input=$input,Ecuador&key=${widget.apiKey}&language=${widget.language}";
+        "https://maps.googleapis.com/maps/api/place/autocomplete/json?input=$input,EC&key=${widget.apiKey}&language=${widget.language}";
     if (widget.location != null && widget.radius != null) {
       url +=
           "&location=${widget.location.latitude},${widget.location.longitude}&radius=${widget.radius}";
